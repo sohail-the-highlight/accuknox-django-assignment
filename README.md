@@ -1,6 +1,11 @@
 
 ### Step 1: Clone or Download the Project
 
+open a terminal 
+
+
+
+
 
 cd social_network
 
