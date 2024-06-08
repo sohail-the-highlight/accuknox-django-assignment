@@ -112,7 +112,7 @@ def send_friend_request(request):
         request_count += 1
 
     if request_count > 3:
-        return JsonResponse({'error': 'Rate limit exceeded'}, status=status.HTTP_429_TOO_MANY_REQUESTS)
+        return JsonResponse({'error': 'You cannot send more than 3 friend requests per minute.'}, status=status.HTTP_429_TOO_MANY_REQUESTS)
 
     cache.set(cache_key, request_count, timeout=CACHE_TTL)
 
