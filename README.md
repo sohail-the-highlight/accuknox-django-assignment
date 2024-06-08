@@ -122,6 +122,13 @@ This document provides detailed instructions on how to use the various APIs in t
       "request_id": 1,
       "response": "accept"
     }
+
+     **Body:**
+    ```json
+    {
+      "request_id": 1,
+      "response": "reject"
+    }
     ```
 - **Headers:**
   - `Authorization: Bearer <your_jwt_token>`
