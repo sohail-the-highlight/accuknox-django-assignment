@@ -1,12 +1,30 @@
 
 ### Step 1: Clone or Download the Project
+
+
 cd social_network
+
+
+
 open a terminal 
+
+
+
 run commands: 
+
+
  python manage.py makemigrations
+
+
 python manage.py migrate
 
+
+
 Run the development server: python manage.py runserver
+
+
+
+
 
 Then open postman to test the below mentioned apis
 
