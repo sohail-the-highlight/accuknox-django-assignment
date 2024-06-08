@@ -11,9 +11,6 @@ cd social_network
 
 
 
-open a terminal 
-
-
 
 run commands: 
 
