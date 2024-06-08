@@ -111,7 +111,14 @@ This document provides detailed instructions on how to use the various APIs in t
   - Set the request type to `GET`.
   - Enter the URL: `http://localhost:8000/api/users/friend-requests/pending/`
   - In the Headers section, add a key-value pair: `Authorization = Bearer <your_jwt_token>`.
-
+  - Remember the id of user which you want to accept or reject
+  {
+        "id": 13,
+        "timestamp": "2024-06-07T16:08:23.705343Z",
+        "from_user": 11,
+        "to_user": 14
+    },
+  
 ### 6. Respond to Friend Request
 - **URL:** `/api/users/friend-request/respond/`
 - **Method:** `POST`
