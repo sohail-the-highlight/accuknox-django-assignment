@@ -5,6 +5,9 @@ open a terminal
 
 
 
+pip install -r requirements.txt
+
+
 
 
 cd social_network
