@@ -1,12 +1,32 @@
 
 ### Step 1: Clone or Download the Project
-cd social_network
+
 open a terminal 
+
+
+
+
+
+cd social_network
+
+
+
+
 run commands: 
+
+
  python manage.py makemigrations
+
+
 python manage.py migrate
 
+
+
 Run the development server: python manage.py runserver
+
+
+
+
 
 Then open postman to test the below mentioned apis
 
@@ -93,7 +113,14 @@ This document provides detailed instructions on how to use the various APIs in t
   - Set the request type to `GET`.
   - Enter the URL: `http://localhost:8000/api/users/friend-requests/pending/`
   - In the Headers section, add a key-value pair: `Authorization = Bearer <your_jwt_token>`.
-
+  - Remember the id of user which you want to accept or reject
+  {
+        "id": 13,
+        "timestamp": "2024-06-07T16:08:23.705343Z",
+        "from_user": 11,
+        "to_user": 14
+    },
+  
 ### 6. Respond to Friend Request
 - **URL:** `/api/users/friend-request/respond/`
 - **Method:** `POST`
@@ -103,6 +130,13 @@ This document provides detailed instructions on how to use the various APIs in t
     {
       "request_id": 1,
       "response": "accept"
+    }
+
+     **Body:**
+    ```json
+    {
+      "request_id": 1,
+      "response": "reject"
     }
     ```
 - **Headers:**
@@ -194,7 +228,7 @@ See `requirements.txt` for the full list of dependencies.
    - Headers: `Authorization: Bearer <your_jwt_token>`
 
 5. **List Pending Friend Requests**
-   - Endpoint: `/api/users/friend-request/pending/`
+   - Endpoint: `/api/users/friend-requests/pending/`
    - Method: `GET`
    - Headers: `Authorization: Bearer <your_jwt_token>`
 
