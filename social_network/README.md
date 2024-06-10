@@ -84,14 +84,14 @@ This document provides detailed instructions on how to use the various APIs in t
   - In the Headers section, add a key-value pair: `Authorization = Bearer <your_jwt_token>`.
 
 ### 5. List Pending Friend Requests
-- **URL:** `/api/users/friend-request/pending/`
+- **URL:** `/api/users/friend-requests/pending/`
 - **Method:** `GET`
 - **Description:** List all pending friend requests for the logged-in user.
 - **Headers:**
   - `Authorization: Bearer <your_jwt_token>`
 - **Example in Postman:**
   - Set the request type to `GET`.
-  - Enter the URL: `http://localhost:8000/api/users/friend-request/pending/`
+  - Enter the URL: `http://localhost:8000/api/users/friend-requests/pending/`
   - In the Headers section, add a key-value pair: `Authorization = Bearer <your_jwt_token>`.
 
 ### 6. Respond to Friend Request
